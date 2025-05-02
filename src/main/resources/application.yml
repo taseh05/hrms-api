@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: hrms-api
+  datasource:
+    url: jdbc:postgresql://db:5432/hrms_db
+    username: postgres
+    password: sillicon
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+server:
+  port: 8089
+  servlet:
+    context-path: /api
+
+
+logging:
+  level:
+    com.hrms: DEBUG
+    org.springframework.web: INFO
+    org.hibernate: ERROR
