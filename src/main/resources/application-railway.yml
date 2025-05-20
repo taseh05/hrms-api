@@ -2,7 +2,7 @@ spring:
   application:
     name: hrms-api
   datasource:
-    url: jdbc:postgresql://database-1-instance-1.cps6mmeuexfi.ap-south-1.rds.amazonaws.com:5432/postgres
+    url: jdbc:postgresql://gondola.proxy.rlwy.net:25514/railway
     username: postgres
     password: XfMJndKcWsDRzOFOCQdOkhddkMsKyKQz
     driver-class-name: org.postgresql.Driver
@@ -18,6 +18,8 @@ spring:
 
 server:
   port: 9010
+  servlet:
+    context-path: /api
 
 
 logging:
